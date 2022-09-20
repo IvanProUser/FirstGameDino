@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.game {
+  width: 800px;
+  height: 200px;
+  border-bottom: 2px solid #000;
+  margin: 0 auto;
+}
+
+.game__dino {
+  width: 60px;
+  height: 50px;
+  background-image: url("../img/pngwing.com.png");
+  background-size: 60px 50px;
+  position: relative;
+  top: 145px;
+}
+
+.game__cactus {
+  width: 20px;
+  height: 40px;
+  background-image: url("../img/pngegg.png");
+  background-size: 20px 40px;
+  position: relative;
+  top: 110px;
+  left: 780px;
+  -webkit-animation: cactusMove 1s infinite linear;
+          animation: cactusMove 1s infinite linear;
+}
+
+@-webkit-keyframes cactusMove {
+  0% {
+    left: 780px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+@keyframes cactusMove {
+  0% {
+    left: 780px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+.jump {
+  -webkit-animation: jump 0.3s linear;
+          animation: jump 0.3s linear;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 130px;
+  }
+  50% {
+    top: 80px;
+  }
+  80% {
+    top: 130px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 130px;
+  }
+  50% {
+    top: 80px;
+  }
+  80% {
+    top: 130px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
